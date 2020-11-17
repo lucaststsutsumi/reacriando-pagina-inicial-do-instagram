@@ -31,11 +31,62 @@ body {
   align-items: center;
   justify-content: center;
   width: 50%;
+  position: relative;
 }
 
 .instagram-left-side img {
   height: auto;
-  max-width: 100%;
+  max-width: 200%;
+  position: relative;
+}
+
+#instagram-phone-0 {
+  width: 200%;
+}
+
+#instagram-phone-1 {
+  margin: 30px 5px 0 0;
+  width: 70%;
+  position: absolute;
+  animation-name: instagram-phone-fade-in-out;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+}
+
+#instagram-phone-2 {
+  margin: 30px 5px 0 0;
+  width: 70%;
+  position: absolute;
+  animation-name: instagram-phone-fade-in-out;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+#instagram-phone-3 {
+  margin: 30px 5px 0 0;
+  width: 70%;
+  position: absolute;
+  animation-name: instagram-phone-fade-in-out;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+#instagram-phone-4 {
+  margin: 30px 5px 0 0;
+  width: 70%;
+  background-position: -200px;
+  position: absolute;
+  animation-name: instagram-phone-fade-in-out;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .instagram-right-side {
@@ -128,7 +179,11 @@ body {
   background-image: url(img/googleplay-button.png);
 }
 
-/* Responsividade */
+/*
+====================================================================================
+================================== Responsividade ==================================
+==================================================================================== 
+*/
 
 @media (max-width: 967px) {
   .instagram-wrapper {
@@ -137,7 +192,7 @@ body {
 }
 
 @media (max-width: 650px) {
-  body{
+  body {
     background-color: #ffffff;
   }
   .instagram-wrapper {
@@ -151,5 +206,29 @@ body {
   }
   .group {
     border: 1px solid #ffffff;
+  }
+}
+
+/*
+====================================================================================
+================================== Animação ==================================
+==================================================================================== 
+*/
+
+@keyframes instagram-phone-fade-in-out {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
